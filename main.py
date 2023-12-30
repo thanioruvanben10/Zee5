@@ -75,7 +75,7 @@ def main():
     if len(sys.argv) > 1:
         num_codes = int(sys.argv[1])
     else:
-        num_codes = int("50")
+        num_codes = int(input(f"{colorama.Fore.BLUE}Enter the number of codes to generate: "))
 
     for _ in range(num_codes):
         generate_and_verify_code()
