@@ -25,7 +25,7 @@ def generate_random_string(length):
 
 def generate_and_verify_code():
     code_prefix = "Z5CPNA23Y"
-    random_suffix = generate_random_string(4)
+    random_suffix = generate_random_string(5)
     code = f"{code_prefix}{random_suffix}"
 
     url = f"https://securepayment.zee5.com/paymentGateway/coupon/verification?coupon_code={code}&translation=en&country_code=IN"
