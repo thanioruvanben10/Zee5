@@ -24,10 +24,10 @@ def generate_random_string(length):
     return ''.join(random.choice(characters) for _ in range(length))
 
 def generate_and_verify_code():
-    code_prefix = input("Enter The Prefix:"))
+    code_prefix = input("Enter The Prefix:")
     if code_prefix==None:
         code_prefix = "Z5CPNA23Y"
-    xy = int(input("Enter the Suffix Digit:")
+    xy = int(input("Enter the Suffix Digit:"))
     random_suffix = generate_random_string(xy)
     code = f"{code_prefix}{random_suffix}"
 
